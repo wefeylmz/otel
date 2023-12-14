@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benim Bloğum</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4285f4;
+            color: #fff;
+        }
+
+        main {
+            margin-top: 20px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        article {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        article img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        article div {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4285f4;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .author-name {
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4285f4;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Türkiye'nin Harikaları</h1>
+        <p>Hayatı keşfedin, öğrenin ve paylaşın!</p>
+    </header>
+
+    <main>
+        <article>
+            <img src="resimler/k2.jpg" alt="Makale Resmi">
+            <div>
+                <h2>Kapadokya</h2>
+                <p>Kapadokya, 60 milyon yıl önce Erciyes, Hasandağı ve Göllüdağ’ın püskürttüğü lav ve küllerin oluşturduğu yumuşak tabakaların milyonlarca yıl boyunca yağmur ve rüzgâr tarafından aşındırılmasıyla ortaya çıkan bölgedir.</p>
+                <div class="author-info">
+                    <img src="resimler/Cappadociasunrise.jpg" alt="Author Avatar" class="author-avatar">
+                    <span class="author-name"></span>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <img src="resimler/Bosphorus_Bridge_(235499411).jpg" alt="Makale Resmi">
+            <div>
+                <h2>İstanbul</h2>
+                <p>İstanbul, Türkiye'de Marmara Bölgesi'nde yer alan ve İstanbul ilinin merkezi olan şehirdir. Ekonomik, tarihî ve sosyo-kültürel açıdan önde gelen şehirlerden biridir. Şehir, iktisadi büyüklük açısından dünyada 34. sırada yer alır. Nüfuslarına göre şehirler listesinde belediye sınırları göz önüne alınarak yapılan </p>
+                <div class="author-info">
+                    <img src="resimler/View_of_Levent_financial_district_from_Istanbul_Sapphire.jpg" alt="Author Avatar" class="author-avatar">
+                    <span class="author-name"></span>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <img src="resimler/Aspendos_Amphitheatre.jpg" alt="Makale Resmi">
+            <div>
+                <h2>Aspendos Antik Kenti</h2>
+                <p>Aspendos veya Belkıs, Antalya ili Serik ilçesinde bulunan Belkıs köyünde yer alan antik tiyatrosuyla meşhur bir antik kenttir. Pamfilya'nın en zengin şehirlerinden birisidir.</p>
+                <div class="author-info">
+                    <img src="resimler/330px-Roman_theater_in_Aspendos.jpg" alt="Author Avatar" class="author-avatar">
+                    <span class="author-name"></span>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <img src="resimler/Balikli_Göl_03.jpg" alt="Makale Resmi">
+            <div>
+                <h2>Peygamberler Şehr-i Şanlıurfa</h2>
+                <p>Şanlıurfa, halk arasındaki kısa adıyla Urfa veya eski çağlarda bilinen adıyla Edessa, Türkiye'nin Şanlıurfa ilinin merkezi olan şehirdir.Yazları son derece sıcak ve kurak bir iklime sahip olan şehir, kışı serin ve nemli geçirir. 2 milyonu aşkın nüfusa sahiptir.</p>
+                <div class="author-info">
+                    <img src="resimler/urfa.jpg" alt="Author Avatar" class="author-avatar">
+                    <span class="author-name"></span>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <img src="resimler/Konya_21_(cropped).jpg" alt="Makale Resmi">
+            <div>
+                <h2>Mevlana Şehr-i Konya </h2>
+                <p>Konya, Türkiye'nin Konya ilinin merkezi olan şehirdir. 1875'te kurulan Konya Belediyesi, 1987'de çıkarılan 3399 sayılı yasa gereğince "büyükşehir" statüsüne kavuşmuş olup 1989'dan beri belediye hizmetleri bu statüye göre yürütülmektedir. 2014'te 6360 sayılı kanun ile büyükşehir belediyesinin sınırları il mülki sınırları oldu.</p>
+                <div class="author-info">
+                    <img src="resimler/KültürparkKonya.jpg" alt="Author Avatar" class="author-avatar">
+                    <span class="author-name"></span>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <img src="resimler/izmir.jpg" alt="Makale Resmi">
+            <div>
+                <h2>İzmir</h2>
+                <p>İzmir, Türkiye'de Ege Bölgesi'nde yer alan ve İzmir ilinin merkezi olan şehirdir. Ülkenin nüfus bakımından en kalabalık üçüncü şehridir. Ekonomik, tarihî ve sosyo-kültürel açıdan önde gelen şehirlerden biridir.</p>
+                <div class="author-info">
+                    <img src="resimler/izmir2.jpg" alt="Author Avatar" class="author-avatar">
+                    <span class="author-name"></span>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <img src="resimler/kast.jpg" alt="Makale Resmi">
+            <div>
+                <h2>Kastamonu</h2>
+                <p>Kastamonu, Türkiye Cumhuriyeti'nin Karadeniz Bölgesi'nde yer alan Kastamonu ilinin merkezi olan şehirdir.Gökırmak'ın bir kolu olan Karaçomak Deresi vadisinde kurulu bulunan şehrin denizden yüksekliği 774 metredir.</p>
+                <div class="author-info">
+                    <img src="resimler/cide.jpg" alt="Author Avatar" class="author-avatar">
+                    <span class="author-name"></span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Daha fazla makale ekleyebilirsiniz -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023. EFE YILMAZ® TARAFINDAN TASARLANIP DİZAYN EDİLMİŞTİR.</p>
+    </footer>
+
+</body>
+</html>

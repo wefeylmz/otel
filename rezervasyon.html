@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervasyon</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        form, .reservation-info {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            appearance: none;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .reservation-info {
+            background-color: #FFA500; /* Turuncu renk tema */
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2> Rezervasyon </h2>
+    </header>
+
+    <!-- Rezervasyon formu -->
+    <form action="/rezervasyon-kaydet" method="post">
+        <label for="firstName">Ad:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Soyad:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="checkInDate">Giriş Tarihi:</label>
+        <input type="date" id="checkInDate" name="checkInDate" required>
+
+        <label for="checkOutDate">Çıkış Tarihi:</label>
+        <input type="date" id="checkOutDate" name="checkOutDate" required>
+
+        <label for="roomType">Oda Tipi:</label>
+        <select id="roomType" name="roomType" required>
+            <option value="Suit 1">Suit 1</option>
+            <option value="Suit 2">Suit 2</option>
+            <option value="Suit 3">Suit 3</option>
+        </select>
+
+        <button type="submit">Rezervasyon Yap</button>
+    </form>
+
+    <!-- Rezervasyon bilgisi -->
+    <div class="reservation-info" style="display: none;">
+        <h2>Rezervasyon Bilgileriniz</h2>
+        <p>Ad: <span id="reservationFirstName"></span></p>
+        <p>Soyad: <span id="reservationLastName"></span></p>
+        <p>Giriş Tarihi: <span id="reservationCheckInDate"></span></p>
+        <p>Çıkış Tarihi: <span id="reservationCheckOutDate"></span></p>
+        <p>Oda Tipi: <span id="reservationRoomType"></span></p>
+    </div>
+
+    <footer>
+        &copy; 2023 Yılmaz Otel Rezervasyon
+    </footer>
+
+    <script>
+        // Rezervasyon formunu gizle, bilgi bölümünü göster
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Formdaki bilgileri al
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var checkInDate = document.getElementById('checkInDate').value;
+            var checkOutDate = document.getElementById('checkOutDate').value;
+            var roomType = document.getElementById('roomType').value;
+
+            // Bilgi bölümündeki span elementlerine değerleri ekle
+            document.getElementById('reservationFirstName').innerText = firstName;
+            document.getElementById('reservationLastName').innerText = lastName;
+            document.getElementById('reservationCheckInDate').innerText = checkInDate;
+            document.getElementById('reservationCheckOutDate').innerText = checkOutDate;
+            document.getElementById('reservationRoomType').innerText = roomType;
+
+            // Formu gizle, bilgi bölümünü göster
+            document.querySelector('form').style.display = 'none';
+            document.querySelector('.reservation-info').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
