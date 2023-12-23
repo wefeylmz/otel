@@ -117,8 +117,11 @@ section {
 }
 
 img {
-  height: 280px;
-  width: 250px;
+  border-radius: 12px;
+  width: 360px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all ease 0.2s;
+  object-fit: cover;
 }
 
 .promo-video {
@@ -152,7 +155,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
-.reservation-button {
+.primaryButton {
   padding: 7px;
   text-decoration: none;
   color: white;
@@ -162,7 +165,7 @@ footer {
 }
 
 /* Rezervasyon */
-.reservation-button:hover {
+.primaryButton:hover {
   opacity: 0.7;
 }
 
@@ -206,4 +209,7 @@ footer {
 .price-button span {
   font-family: "Modern Antiqua", serif;
   padding: 12px;
+}
+.roomName {
+  font-family: "Modern Antiqua", serif;
 }

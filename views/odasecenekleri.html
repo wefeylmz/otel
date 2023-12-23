@@ -31,9 +31,10 @@
     </header>
 
     <section>
-      <h2>Oda Seçiniz</h2>
+      <h2>Odalar</h2>
       <label for="roomSelect">Oda:</label>
       <select id="roomSelect" onchange="changeRoom()">
+        <option value="">Oda Seçiniz</option>
         <option value="oda1">Oda 1</option>
         <option value="oda2">Oda 2</option>
         <option value="oda3">Oda 3</option>
@@ -41,55 +42,68 @@
     </section>
 
     <section id="oda1" style="display: none">
-      <h2>Oda 1</h2>
+      <h2 class="roomName">Ibıza</h2>
       <div style="width: 100%; display: flex; justify-content: space-between">
-        <img src="resimler/daire-1.jpg" Oda 1 Resmi />
-        <video controls>
-          <source src="resimler/oda4.mp4" type="video/mp4" />
-        </video>
+        <img src="../resimler/daire-1.jpg" Oda 1 Resmi />
       </div>
       <div class="room-description">
-        <h3>Oda 1 Tanıtımı</h3>
+        <h3 class="roomName">Ibıza Tanıtımı</h3>
         <p>
           Bu oda, konforlu bir atmosfer ve özel özelliklerle tasarlanmıştır.
           Rahatlamak ve huzur içinde zaman geçirmek için ideal bir ortamdır.
         </p>
+        <div class="price-button">
+          <div>
+            <span>34$</span>
+          </div>
+          <div>
+            <a href="./rezervasyon.html" class="primaryButton">Rezerve et</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="oda2" style="display: none">
-      <h2>Oda 2</h2>
+      <h2 class="roomName">Scothland</h2>
       <div style="width: 100%; display: flex; justify-content: space-between">
-        <img src="resimler/oteldenresimler-2-.jpg" alt="Oda 2 Resmi" />
-        <video controls>
-          <source src="resimler/oda4.mp4" type="video/mp4" />
-          Tarayıcınız video etiketini desteklemiyor.
-        </video>
+        <img src="../resimler/otel4.jpg" alt="Oda 2 Resmi" />
       </div>
       <div class="room-description">
-        <h3>Oda 2 Tanıtımı</h3>
+        <h3 class="roomName">Scothland Tanıtımı</h3>
         <p>
           Bu oda, modern tasarım ve rahatlık sunan özel özelliklere sahiptir.
           Burada keyifli bir konaklama geçirebilirsiniz.
         </p>
+        <div class="price-button">
+          <div>
+            <span>34$</span>
+          </div>
+          <div>
+            <a href="./rezervasyon.html" class="primaryButton">Rezerve et</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="oda3" style="display: none">
-      <h2>Oda 3</h2>
+      <h2 class="roomName">Eiffel</h2>
       <div style="width: 100%; display: flex; justify-content: space-between">
-        <img src="resimler/rsim3.jpg" alt="Oda 3 Resmi" />
-        <video controls>
-          <source src="resimler/oda4.mp4" type="video/mp4" />
-          Tarayıcınız video etiketini desteklemiyor.
-        </video>
+        <img src="../resimler/otel7.jpg" alt="Oda 3 Resmi" />
       </div>
       <div class="room-description">
-        <h3>Oda 3 Tanıtımı</h3>
+        <h3 class="roomName">Eiffel Tanıtımı</h3>
         <p>
           Bu oda, şıklık ve konforu bir araya getiren benzersiz bir tasarıma
           sahiptir. Burada huzurlu bir konaklama geçirebilirsiniz.
         </p>
+        <div class="price-button">
+          <div>
+            <span>34$</span>
+          </div>
+          <div>
+            <a href="./rezervasyon.html" class="primaryButton">Rezerve et</a>
+          </div>
+        </div>
       </div>
     </section>
 
