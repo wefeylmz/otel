@@ -1,178 +1,113 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
     <title>Odalar</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            background-color: #ffffff;
-            color: #ffffff;
-        }
-
-        header {
-            width: 100%;
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #ecf0f1;
-        }
-
-        section {
-            width: 45%;
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        section:hover {
-            transform: scale(1.05);
-        }
-
-        h1  { 
-             color: #ffffff;
-            } 
-
-         h2 {
-            color: black;
-         }
-
-         h3 {
-            color: rgb(244, 10, 10);
-         }
-
-
-        select {
-            padding: 10px;
-            font-size: 16px;
-            width: 100%;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        img, video {
-            max-width: 30%;
-            height: auto;
-            margin-top: 20px;
-            border-radius: 8px;
-        }
-
-        .room-description {
-            width: 100%;
-            margin-top: 20px;
-            text-align: left;
-        }
-
-        p {
-            line-height: 1.6;
-            color: #555;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1>Odalar </h1>
+      <header class="navigation">
+        <h1 class="logo">Hotel <i class="fa-solid fa-hotel"></i></h1>
+        <nav class="link-items">
+          <ul>
+            <li><a href="./index.html">Anasayfa</a></li>
+            <li><a href="./odasecenekleri.html">Oda Seçenekleri</a></li>
+            <li><a href="./rezervasyon.html">Rezervasyon</a></li>
+            <li><a href="./about.html">Hakkımızda</a></li>
+            <li><a href="./hizmetlerimiz.html">Hizmetlerimiz</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1 class="center">Odalar</h1>
     </header>
 
     <section>
-        <h2>Oda Seçiniz</h2>
-        <label for="roomSelect">Oda:</label>
-        <select id="roomSelect" onchange="changeRoom()">
-            <option value="oda1">Oda 1</option>
-            <option value="oda2">Oda 2</option>
-            <option value="oda3">Oda 3</option>
-        </select>
+      <h2>Oda Seçiniz</h2>
+      <label for="roomSelect">Oda:</label>
+      <select id="roomSelect" onchange="changeRoom()">
+        <option value="oda1">Oda 1</option>
+        <option value="oda2">Oda 2</option>
+        <option value="oda3">Oda 3</option>
+      </select>
     </section>
 
-    <section id="oda1" style="display:none;">
-        <h2>Oda 1</h2>
-        <div style="width: 100%; display: flex; justify-content: space-between;">
-            <img src="resimler/daire-1.jpg" Oda 1 Resmi>
-            <video controls>
-                <source src="resimler/oda4.mp4" type="video/mp4">
-               
-            </video>
-        </div>
-        <div class="room-description">
-            <h3>Oda 1 Tanıtımı</h3>
-            <p>Bu oda, konforlu bir atmosfer ve özel özelliklerle tasarlanmıştır. Rahatlamak ve huzur içinde zaman geçirmek için ideal bir ortamdır.</p>
-        </div>
+    <section id="oda1" style="display: none">
+      <h2>Oda 1</h2>
+      <div style="width: 100%; display: flex; justify-content: space-between">
+        <img src="resimler/daire-1.jpg" Oda 1 Resmi />
+        <video controls>
+          <source src="resimler/oda4.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="room-description">
+        <h3>Oda 1 Tanıtımı</h3>
+        <p>
+          Bu oda, konforlu bir atmosfer ve özel özelliklerle tasarlanmıştır.
+          Rahatlamak ve huzur içinde zaman geçirmek için ideal bir ortamdır.
+        </p>
+      </div>
     </section>
 
-    <section id="oda2" style="display:none;">
-        <h2>Oda 2</h2>
-        <div style="width: 100%; display: flex; justify-content: space-between;">
-            <img src="resimler/oteldenresimler-2-.jpg" alt="Oda 2 Resmi">
-            <video controls>
-                <source src="resimler/oda4.mp4" type="video/mp4">
-                Tarayıcınız video etiketini desteklemiyor.
-            </video>
-        </div>
-        <div class="room-description">
-            <h3>Oda 2 Tanıtımı</h3>
-            <p>Bu oda, modern tasarım ve rahatlık sunan özel özelliklere sahiptir. Burada keyifli bir konaklama geçirebilirsiniz.</p>
-        </div>
+    <section id="oda2" style="display: none">
+      <h2>Oda 2</h2>
+      <div style="width: 100%; display: flex; justify-content: space-between">
+        <img src="resimler/oteldenresimler-2-.jpg" alt="Oda 2 Resmi" />
+        <video controls>
+          <source src="resimler/oda4.mp4" type="video/mp4" />
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
+      </div>
+      <div class="room-description">
+        <h3>Oda 2 Tanıtımı</h3>
+        <p>
+          Bu oda, modern tasarım ve rahatlık sunan özel özelliklere sahiptir.
+          Burada keyifli bir konaklama geçirebilirsiniz.
+        </p>
+      </div>
     </section>
 
-    <section id="oda3" style="display:none;">
-        <h2>Oda 3</h2>
-        <div style="width: 100%; display: flex; justify-content: space-between;">
-            <img src="resimler/rsim3.jpg" alt="Oda 3 Resmi">
-            <video controls>
-                <source src="resimler/oda4.mp4" type="video/mp4">
-                Tarayıcınız video etiketini desteklemiyor.
-            </video>
-        </div>
-        <div class="room-description">
-            <h3>Oda 3 Tanıtımı</h3>
-            <p>Bu oda, şıklık ve konforu bir araya getiren benzersiz bir tasarıma sahiptir. Burada huzurlu bir konaklama geçirebilirsiniz.</p>
-        </div>
+    <section id="oda3" style="display: none">
+      <h2>Oda 3</h2>
+      <div style="width: 100%; display: flex; justify-content: space-between">
+        <img src="resimler/rsim3.jpg" alt="Oda 3 Resmi" />
+        <video controls>
+          <source src="resimler/oda4.mp4" type="video/mp4" />
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
+      </div>
+      <div class="room-description">
+        <h3>Oda 3 Tanıtımı</h3>
+        <p>
+          Bu oda, şıklık ve konforu bir araya getiren benzersiz bir tasarıma
+          sahiptir. Burada huzurlu bir konaklama geçirebilirsiniz.
+        </p>
+      </div>
     </section>
-  
-    <footer>
-        &copy; 2023 Yılmaz Otel-Odalar
-    </footer>
+
+    <footer>&copy; 2023 Yılmaz Otel-Odalar</footer>
 
     <script>
-        function changeRoom() {
-            var selectBox = document.getElementById("roomSelect");
-            var selectedRoom = selectBox.options[selectBox.selectedIndex].value;
+      function changeRoom() {
+        var selectBox = document.getElementById("roomSelect");
+        var selectedRoom = selectBox.options[selectBox.selectedIndex].value;
 
-            // Tüm odaları gizle
-            document.getElementById("oda1").style.display = "none";
-            document.getElementById("oda2").style.display = "none";
-            document.getElementById("oda3").style.display = "none";
+        // Tüm odaları gizle
+        document.getElementById("oda1").style.display = "none";
+        document.getElementById("oda2").style.display = "none";
+        document.getElementById("oda3").style.display = "none";
 
-            // Seçilen odayı göster
-            document.getElementById(selectedRoom).style.display = "block";
-        }
-        
+        // Seçilen odayı göster
+        document.getElementById(selectedRoom).style.display = "block";
+      }
     </script>
-
-</body>
+  </body>
 </html>
