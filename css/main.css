@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap");
 
-body {
+html, body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   letter-spacing: 1px;
   background-color: #f4f4f4;
   color: #333;
+  width: 100%;
+  height: 100%;
 }
 .center {
   text-align: center;
@@ -203,7 +205,6 @@ footer {
 .price-button {
   display: flex;
   align-items: start;
-  flex-direction: column;
   gap: 22px;
 }
 .price-button span {
@@ -215,4 +216,8 @@ footer {
 }
 #iletisim {
   margin-bottom: 125px;
+}
+
+.oda-section{
+  height: 100%;
 }
