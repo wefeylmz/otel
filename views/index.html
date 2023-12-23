@@ -13,19 +13,20 @@
     <header class="navigation">
         <h1 class="logo">Hotel  <i class="fa-solid fa-hotel"></i></h1>
         <nav class="link-items">
-            <a href="#anasayfa">Anasayfa</a>
-            <a href="#oda-secenekleri">Oda Seçenekleri</a>
-            <a href="#rezervasyon">Rezervasyon</a>
-            <a href="#hakkimizda">Hakkımızda</a>
-           
-        </nav> 
+            <ul>
+                <li><a href="./index.html">Anasayfa</a></li>
+                <li><a href="./odasecenekleri.html">Oda Seçenekleri</a></li>
+                <li><a href="./rezervasyon.html">Rezervasyon</a></li>
+                <li><a href="./about.html">Hakkımızda</a></li>
+            </ul>     
+        </nav>  
     </header>
-
+<section>
         <div class="container">
         <div class="address-box">
             <h3>Adres</h3>
             <p>Beşiktaş Meydanı no:1903 Beşiktaş/İstanbul</p>
-        </div>
+        </div> 
 
 
         <h3>Otel Hakkında</h3>
@@ -71,17 +72,50 @@
             <div class="cta-box">
                 <h3>Online Rezervasyon</h3>
                 <p>Hemen online rezervasyon yapmak için buraya tıklayın.</p>
-                <button>Rezervasyon Yap</button>
-                
+                <a class="reservation-button" href="./rezervasyon.html">Rezervasyon Yap</a>
             </div>
            
         </div>
     </section>
 
     <section id="oda-secenekleri">
-        <h2>Oda Seçenekleri</h2>
-        <p> Suit 1 <br> Suit 2 <br>Suit 3
-        </p>
+        <h2 class="center">Oda Seçenekleri</h2>
+  
+        <div class="cards">
+            <div class="card">
+                <img class="otel-bina" src="../resimler/daire-1.jpg" alt="">
+                <div class="container"> 
+                    <h2>Ibiza</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod repellendus corrupti illum, ullam repudiandae. Cumque minus molestias voluptates tempora est!</p>
+                    <div class="price-button">
+                        <span>34$</span>
+                        <button class="reservation-button">Rezerve Et</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="otel-bina" src="../resimler/otel7.jpg" alt="">
+                <div class="container">
+                    <h2>Eiffel</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod repellendus corrupti illum, ullam repudiandae. Cumque minus molestias voluptates tempora est!</p>
+                    <div class="price-button">
+                        <span>34$</span>
+                        <button class="reservation-button">Rezerve Et</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="otel-bina" src="../resimler/otel4.jpg" alt="">
+                <div class="container">
+                    <h2>Scothland</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod repellendus corrupti illum, ullam repudiandae. Cumque minus molestias voluptates tempora est!</p>
+                    <div class="price-button">
+                        <span>34$</span>
+                        <button class="reservation-button">Rezerve Et</button>
+                    </div>
+                </div>
+            </div>
+        </div>
        
     </section>
 
